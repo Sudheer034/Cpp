@@ -2,6 +2,6 @@
 
 int main()
 {
-  std::cout << "Started C++ :)\n";
+  std::cout << "Started C++ :)" << std::endl;
   return 0;
 }
