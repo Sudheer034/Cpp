@@ -2,7 +2,7 @@
 #include <string> // a string header file
 
 // NOTE:: all are signed bit, using 2's complement.
-// a quick idea, the MSB is considered as sign bit, we use that to divide the 2^n to (2^(n-1), 2^(n-1)-1) [we start from 0 from positive side]
+// a quick idea, the MSB is considered as sign bit, we use that to divide the (2^n - 1) to (2^(n-1), 2^(n-1)-1) [we start from 0 from positive side]
 
 int main(void)
 {
