@@ -48,8 +48,8 @@ class ParentClass
 class ChildClass : public ParentClass, public ParentStruct // man, it also can inherit structs too...
 {};
 
-// struct GrandChildStruct : ChildClass, ParentClass, ChildStruct
-// {}; this can't be possible due to ambiguity(Warning though)
+ struct GrandChildStruct : public ChildClass, public ParentClass, public ChildStruct
+ {}; // this can't be possible due to ambiguity(Warning though)
 
 int main()
 {
@@ -66,7 +66,8 @@ int main()
   ChildClass C_Child;
 
   cout << Child.p << endl;
-  cout << C_Child.ParentClass::c << C_Child.ParentStruct::p << endl; // this is also another of calling functions from inheritance in Cpp
+  cout << C_Child.ParentClass::c << endl 
+  << C_Child.ParentStruct::p << endl; // this is also another of calling functions from inheritance in Cpp
 
   // ig this file isn't enough, this is mostly introducing, next file, i will test it.
 
