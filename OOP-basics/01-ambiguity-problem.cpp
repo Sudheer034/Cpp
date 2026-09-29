@@ -19,7 +19,7 @@ class Parent // Created the Head class
 
 //        [P]
 
-class Mother : Parent 
+class Mother : public Parent 
 // Mother Inherits from Parent's Class, so it also has data = 19;
 {};
 
@@ -29,7 +29,7 @@ class Mother : Parent
 
 // Parent Node branches to Mother's node
 
-class Father : Parent
+class Father : public Parent
 // Father Inherits from Parent's Class, so same case Mother's
 {};
 
@@ -40,7 +40,7 @@ class Father : Parent
 // same case as Mother's, but Mother and Father are on Seperate Branch.
 
 
-class Child : Father, Mother
+class Child : public Father, public Mother
 {};
 
 //        [P]
