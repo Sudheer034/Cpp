@@ -48,7 +48,7 @@ class ParentClass
 class ChildClass : public ParentClass, public ParentStruct // man, it also can inherit structs too...
 {};
 
- struct GrandChildStruct : public ChildClass, public ParentClass, public ChildStruct
+ struct GrandChildStruct : public ChildClass, public ChildStruct
  {}; // this can't be possible due to ambiguity(Warning though)
 
 int main()
