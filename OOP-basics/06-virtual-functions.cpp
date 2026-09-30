@@ -74,5 +74,8 @@ int main(void)
   // i think it is because when multiple derived virtual table exists, it can't multiple addresses 
   // at a time, so thats why vtables are used i believe. 
 
+  delete dog;
+  dog = nullptr;
+  
   return 0;
 }
