@@ -23,6 +23,11 @@ public:
 };
 
 ostream& operator<<(ostream& out, Vertex& point)
+//  |                   |
+//  |                   |
+//  |                   +---> we are taking cout through it, tbh im not that good these topics, but i 
+//  |                         tried +_+
+//  +---> this is standard output, maybe i think i can give file tpp
 {
   out << "(" << point.x << "," << point.y << "," << point.z << ")" << endl; // we are making the terminal to output as (x,y,z)
   return out;
