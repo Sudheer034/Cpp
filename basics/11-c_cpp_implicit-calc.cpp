@@ -18,5 +18,12 @@ int main()
   // what cpp does is it precomputes 5/150, before compilation. int of fractions is 0
   // (5/150) is 0 and 0 * var is 0
 
+  // well the solution for these is either to use float or try multiplying in different way
+
+  int16_t var2 = 150;
+
+  int16_t result2 = (var2 * 5)/150;
+
+  cout << "Result 2: " << static_cast<int>(result2) << endl; // it outputs 5, note that i changed it because, bit-overflow
   return 0;
 }
